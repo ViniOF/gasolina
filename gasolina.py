@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('gasolina.csv')
 sns.lineplot(data=df, x='dia', y='venda')
+plt.legend(labels=['Preço da gasolina']) ## fica meio redundante, porem colocarei mesmo assim
 plt.xlabel('Dia')
 plt.ylabel('Preço')
 plt.title('Preço da gasolina')
